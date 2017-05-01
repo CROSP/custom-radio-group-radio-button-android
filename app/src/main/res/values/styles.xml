@@ -1,0 +1,50 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="PresetLayoutButton">
+
+        <item name="android:background">@drawable/background_selector_preset_button</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="PresetLayoutButton_ValueText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_time_preset_unit</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/padding_side_title_text
+        </item>
+        <item name="android:paddingLeft">@dimen/padding_side_title_text</item>
+        <item name="android:paddingStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/padding_side_title_text
+        </item>
+        <item name="android:paddingRight">@dimen/padding_side_title_text</item>
+    </style>
+
+    <style name="PresetLayoutButton_UnitText">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text_size_time_preset_unit</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingTop">0dp</item>
+
+    </style>
+
+    <style name="SettingsEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

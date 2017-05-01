@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="net.crosp.customradiobtton.MainActivity">
+
+    <net.crosp.customradiobtton.PresetRadioGroup
+        android:id="@+id/preset_time_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="3dp"
+        android:layout_marginBottom="13dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:presetRadioCheckedId="@+id/preset_time_value_button_60">
+
+        <net.crosp.customradiobtton.PresetValueButton
+            android:id="@+id/preset_time_value_button_30"
+            style="@style/PresetLayoutButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:presetButtonUnitText="@string/unit_seconds"
+            app:presetButtonValueText="@string/title_time_preset_30" />
+
+        <net.crosp.customradiobtton.PresetValueButton
+            android:id="@+id/preset_time_value_button_60"
+            style="@style/PresetLayoutButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:presetButtonUnitText="@string/unit_seconds"
+            app:presetButtonValueText="@string/title_time_preset_60" />
+
+        <net.crosp.customradiobtton.PresetValueButton
+            android:id="@+id/preset_time_value_button_120"
+            style="@style/PresetLayoutButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:presetButtonUnitText="@string/unit_seconds"
+            app:presetButtonValueText="@string/title_time_preset_120" />
+
+    </net.crosp.customradiobtton.PresetRadioGroup>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/edit_text_set_duration"
+        style="@style/SettingsEditText"
+        android:layout_below="@+id/preset_time_radio_group"
+        android:hint="@string/title_settings_set_duration"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:text="30" />
+</RelativeLayout>

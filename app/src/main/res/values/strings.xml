@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Custom Radio Button</string>
+    <string name="title_time_preset_30">30</string>
+    <string name="unit_seconds">Seconds</string>
+    <string name="title_time_preset_120">120</string>
+    <string name="title_time_preset_60">60</string>
+    <string name="title_settings_set_duration">Set duration</string>
+</resources>

@@ -1,0 +1,16 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/text_view_value"
+        style="@style/PresetLayoutButton_ValueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_time_preset_30" />
+
+    <TextView
+        android:id="@+id/text_view_unit"
+        style="@style/PresetLayoutButton_UnitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unit_seconds"
+        android:layout_below="@+id/text_view_value" />
+</merge>
